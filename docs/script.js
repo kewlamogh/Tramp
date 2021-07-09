@@ -9,11 +9,6 @@ function startGaem() {
     }
 }
 
-document.onclick = function (event) {
-    let lns = currentLevel.split('\n');
-    lns[Math.ceil(event.clientY/32) * 32] = lns[Math.ceil(event.clientY/32) * 32].split('')[Math.ceil(event.clientX/32) * 32].join('');
-}
-
 let keysDown = {};
 addEventListener("keydown", function (event) {
     keysDown[event.keyCode] = true;
