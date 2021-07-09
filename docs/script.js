@@ -47,6 +47,11 @@ function input() {
 function getTile(x, y) {
     return (currentLevel[Math.floor(y / 32)][Math.floor(x / 32)]);
 }
+document.onclick = function (event) {
+    let lns = currentLevel.split('\n');
+    let col = currentLevel.split('');
+    lns[event.clientX]
+}
 const c = document.getElementById("canvas").getContext("2d");
 let levels = {}
 let levelNumber = 1;
