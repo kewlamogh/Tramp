@@ -10,10 +10,10 @@ function startGaem() {
 }
 
 let keysDown = {};
-addEventListener("keydown", function (event) {
+document.addEventListener("keydown", function (event) {
     keysDown[event.keyCode] = true;
 });
-addEventListener("keyup", function (event) {
+document.addEventListener("keyup", function (event) {
     delete keysDown[event.keyCode];
 });
 function input() {
@@ -96,7 +96,7 @@ levels["1"] = `1111111111111111111111111
 0100000000010000
 0100000000010000
 0100000000010000
-0100005550010000
+0100005000010000
 0100001110010000
 0100000000010000
 0100000000010000
