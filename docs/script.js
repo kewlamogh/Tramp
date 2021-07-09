@@ -54,8 +54,8 @@ let currentLevel = '';
 const player = {
     x: 256,
     y: 276,
-    width: 15,
-    height: 15,
+    width: 32,
+    height: 32,
     speed: 3,
     mass: 64,
     yke: 0,
